@@ -4,324 +4,482 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MS Consultoria - Especialista em Gestão e Tecnologia para Varejo</title>
+    <link rel="icon" type="image/png" href="icone-empresa.png">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav class="container">
+    <header class="header">
+        <nav class="nav">
             <div class="logo">
-                <span>🏢</span>
-                MS Consultoria
+                <img src="icone-empresa.png" alt="MS Consultoria" class="logo-icon">
+                <span class="logo-text">MS Consultoria</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
-            <a href="#contato" class="cta-button">Fale Comigo</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
         <div class="container">
-            <div class="badge">Especialista em Varejo</div>
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>MS Consultoria</h1>
-                    <p class="subtitle">Especialista em Gestão Estratégica e Tecnologia para Varejo</p>
-                    <p>Profissional com <strong>visão completa e integrada</strong>: domino processos operacionais, tecnologia avançada e gestão estratégica. Diferente de consultores que atuam apenas com banco de dados ou processos isolados, eu integro <strong>DRE, fluxo de caixa, BI, gestão de equipes, integração de sistemas (CRM, WMS, e-commerce) e otimização operacional</strong> em uma solução única e eficiente.</p>
-                    <p>Tenho <strong>sólida experiência em implantação e troca de ERP</strong>, com mais de 15 anos atuando em empresas de grande porte, incluindo grupos que faturam mais de 1 bilhão por ano. Sou responsável por toda a área de tecnologia, conduzindo projetos que trazem inovação, redução de custos e agilidade operacional.</p>
-                    <p>Além disso, <strong>desenvolvo sites e landing pages profissionais</strong> para autônomos e pequenos negócios, oferecendo soluções digitais completas que ampliam a presença online e impulsionam vendas.</p>
-                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
-                        <a href="#contato" class="cta-button">Contate-me</a>
-                        <a href="#servicos" class="cta-button" style="background: transparent; border: 1px solid #3B82F6;">Ver Serviços</a>
+                    <div class="hero-badge">
+                        <span class="badge-icon">🚀</span>
+                        <span>Especialista em Transformação Digital</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Especialista em Gestão Estratégica</span>
+                        <span class="title-highlight">e Tecnologia para Varejo</span>
+                    </h1>
+                    <p class="hero-description">
+                        Profissional com visão completa e integrada: domino processos operacionais, tecnologia avançada e gestão estratégica. Diferente de consultores que atuam apenas com banco de dados ou processos isolados, eu integro DRE, fluxo de caixa, BI, gestão de equipes, integração de sistemas (CRM, WMS, e-commerce) e otimização operacional em uma solução única e eficiente.
+                    </p>
+                    <p class="hero-description">
+                        Tenho experiência sólida em implantação e troca de ERP, com mais de 15 anos atuando em empresas de grande porte, incluindo grupos que faturam mais de 1 bilhão por ano. Sou responsável por toda a área de tecnologia, conduzindo projetos que trazem inovação, redução de custos e agilidade operacional.
+                    </p>
+                    <p class="hero-description">
+                        Além disso, desenvolvemos sites e landing pages profissionais para autônomos e pequenos negócios, oferecendo soluções digitais completas que ampliam a presença online e impulsionam vendas.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contato" class="btn btn-primary">
+                            <span>Vamos Conversar</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                        </a>
+                        <a href="#servicos" class="btn btn-secondary">
+                            <span>Meus Serviços</span>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="perfil-profissional.jpeg" alt="Maicou Andrade - MS Consultoria">
+                    <div class="image-container">
+                        <img src="perfil-profissional.jpeg" alt="Maicou Andrade - MS Consultoria" class="profile-image">
+                        <div class="image-glow"></div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Role para baixo</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m6 9 6 6 6-6"/>
+                </svg>
+            </div>
+        </div>
+    </section>
 
-            <!-- Stats -->
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">15+</div>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <img src="icone-crescimento.png" alt="Experiência">
+                    </div>
+                    <div class="stat-number" data-count="15">0</div>
                     <div class="stat-label">Anos de Experiência</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <img src="icone-alvo.png" alt="Projetos">
+                    </div>
+                    <div class="stat-number" data-count="150">0</div>
                     <div class="stat-label">Projetos Implementados</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">25%</div>
-                    <div class="stat-label">Aumento Médio de Margem</div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <img src="icone-velocidade.png" alt="Margem">
+                    </div>
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">% Aumento Médio de Margem usando ferramenta de precificação</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <img src="icone-equipe.png" alt="Profissionais">
+                    </div>
+                    <div class="stat-number" data-count="2000">0</div>
+                    <div class="stat-label">Profissionais Treinados</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="sobre" class="section">
+    <section id="sobre" class="about">
         <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
+            <div class="section-header">
+                <span class="section-badge">Sobre Mim</span>
+                <h2 class="section-title">Por que eu sou diferente dos outros consultores?</h2>
+                <p class="section-description">
+                    Minha trajetória única me permite oferecer uma visão 360° do seu negócio
+                </p>
+            </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Por que sou diferente dos outros consultores?</h3>
-                    <p>Não sou apenas um "técnico em banco de dados" ou um "especialista em processos". Sou um profissional com <strong>visão 360° completa</strong> que integra tecnologia, processos e gestão estratégica em uma solução única.</p>
+                    <div class="about-highlight">
+                        <h3>O Diferencial Completo</h3>
+                        <p>
+                            Sou especialista em ajustes e correções diretamente no banco de dados, realizando em horas o que muitos levariam meses para resolver com processos manuais. Meu foco é transformar tecnologia em produtividade real, desenvolvendo soluções inteligentes, plataformas de aprendizado e promovendo uma cultura voltada à eficiência e agilidade.
+                        </p>
+                        <p>
+                            Mais do que conhecimento técnico, eu vivo o operacional. Atuo diretamente no setor supermercadista, conheço de perto as dores, as rotinas e a complexidade das operações. Tenho a confiança de grupos que faturam mais de 1 bilhão ao ano, onde sou responsável por toda a área de tecnologia.
+                        </p>
+                        <p>
+                            Minha experiência une profundidade técnica com vivência prática. Isso me permite ir além da solução comum: entrego estratégias alinhadas à realidade do seu negócio, com visão crítica, agilidade e impacto direto nos resultados.
+                        </p>
+                    </div>
                     
-                    <div class="highlight-box">
-                        <h4>🎯 Minha Trajetória Única</h4>
-                        <p>Saí do Paraná e vim para o RN, onde atuo há mais de 15 anos. Tenho experiência prática em empresas que faturam mais de 1 bilhão por ano e já atuei em mais de 21 estados brasileiros, sempre focado em resultados mensuráveis.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <img src="icone-analytics.png" alt="BI">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Business Intelligence</h4>
+                                <p>Transformo dados em insights acionáveis para decisões estratégicas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <img src="icone-integracao.png" alt="Integração">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Integração de Sistemas</h4>
+                                <p>CRM, WMS, e-commerce e BI trabalhando em perfeita harmonia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <img src="icone-grafico.png" alt="Gestão">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Gestão Estratégica</h4>
+                                <p>DRE, fluxo de caixa, curvas ABC e controle de ruptura/excesso</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <ul class="features">
-                        <li>Operações que levariam meses via processos manuais, eu automatizo em dias</li>
-                        <li>Especialista em produtividade tecnológica com foco em ROI</li>
-                        <li>Diagnósticos precisos para identificar gargalos e até furtos</li>
-                        <li>Atuação presencial em todo o território nacional</li>
-                    </ul>
                 </div>
-                <div class="about-image">
-                    <img src="perfil-profissional.jpeg" alt="Maicou Andrade">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Minhas Especialidades</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Gestão de Processos</span>
-                        <span class="skill-percentage">95%</span>
+                
+                <div class="about-technical">
+                    <div class="technical-highlight">
+                        <h3>🔧 Expertise Técnica Avançada</h3>
+                        <p class="technical-intro">
+                            Muito além da teoria, atuo no coração do sistema: o banco de dados. 
+                            Desenvolvo scripts e soluções que reduzem erros, otimizam processos e preparam sua operação para crescer com segurança e agilidade. Veja o que entrego na prática:
+                        </p>
+                        
+                        <div class="technical-services">
+                            <div class="technical-item">
+                                <div class="technical-icon">💾</div>
+                                <div class="technical-content">
+                                    <h4>Correções em massa direto na base de dados</h4>
+                                    <p>Ajustes que levariam semanas feitos em horas, com segurança e rastreabilidade.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="technical-item">
+                                <div class="technical-icon">🔄</div>
+                                <div class="technical-content">
+                                    <h4>Migração de dados entre sistemas diferentes</h4>
+                                    <p>Conversão estruturada de cadastros, notas, títulos, estoques e históricos — tudo validado tecnicamente.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="technical-item">
+                                <div class="technical-icon">🔗</div>
+                                <div class="technical-content">
+                                    <h4>Integrações entre sistemas diversos</h4>
+                                    <p>ERP, BI, WMS, e-commerce, CRM e plataformas fiscais conectadas em perfeita harmonia.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="technical-item">
+                                <div class="technical-icon">⚡</div>
+                                <div class="technical-content">
+                                    <h4>Criação de procedures, triggers e views</h4>
+                                    <p>Automatizações sob medida que eliminam tarefas manuais e reduzem falhas operacionais.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="technical-item">
+                                <div class="technical-icon">👥</div>
+                                <div class="technical-content">
+                                    <h4>BI com filtro por empresa, loja ou marca, individual para cada usuário</h4>
+                                    <p>Cada usuário visualiza somente os dados que tem permissão, de forma clara, segura e com controle total.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="technical-item">
+                                <div class="technical-icon">🎯</div>
+                                <div class="technical-content">
+                                    <h4>Tratamento de base com foco operacional</h4>
+                                    <p>Padronização de cadastros, prevenção de ruptura, controle de excesso e ajuste de inconsistências que afetam a operação.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                    <p class="skill-description">Auditorias inteligentes para rastrear anomalias e otimizar operações</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Integração de Sistemas</span>
-                        <span class="skill-percentage">93%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 93%"></div>
-                    </div>
-                    <p class="skill-description">CRM, WMS, e-commerce com fluxo de informações preciso e automatizado</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">BI & Analytics</span>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                    <p class="skill-description">Decisões estratégicas e operacionais baseadas em dados precisos</p>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span class="skill-name">Desenvolvimento Web</span>
-                        <span class="skill-percentage">87%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 87%"></div>
-                    </div>
-                    <p class="skill-description">Sites e landing pages para autônomos e pequenos negócios</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Resultados Comprovados</h2>
-            <div class="achievements">
-                <div class="achievement-item">
-                    <div class="achievement-icon">📈</div>
-                    <h3 class="achievement-title">Crescimento Sustentável</h3>
-                    <p class="achievement-description">Aumento médio de 25% na margem de lucro dos clientes</p>
-                </div>
-
-                <div class="achievement-item">
-                    <div class="achievement-icon">⚡</div>
-                    <h3 class="achievement-title">Redução de Ruptura</h3>
-                    <p class="achievement-description">Diminuição de 40% na ruptura de estoque</p>
-                </div>
-
-                <div class="achievement-item">
-                    <div class="achievement-icon">👥</div>
-                    <h3 class="achievement-title">Equipes Treinadas</h3>
-                    <p class="achievement-description">Mais de 200 profissionais capacitados</p>
-                </div>
-
-                <div class="achievement-item">
-                    <div class="achievement-icon">🎯</div>
-                    <h3 class="achievement-title">Projetos Entregues</h3>
-                    <p class="achievement-description">50+ implementações bem-sucedidas</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="servicos" class="section">
+    <section id="servicos" class="services">
         <div class="container">
-            <h2 class="section-title">Meus Serviços</h2>
+            <div class="section-header">
+                <span class="section-badge">Serviços</span>
+                <h2 class="section-title">O que eu faço pelo seu negócio</h2>
+                <p class="section-description">
+                    Soluções integradas que unem tecnologia, gestão estratégica e inteligência de dados para maximizar os resultados da sua empresa — com segurança, clareza e eficiência.
+                </p>
+            </div>
+            
             <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">📊</div>
-                    <h3 class="service-title">Consultoria Estratégica</h3>
-                    <p class="service-description">Análise completa do negócio com foco em crescimento sustentável e rentabilidade. DRE, fluxo de caixa e indicadores estratégicos.</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <img src="icone-grafico.png" alt="Consultoria Estratégica">
+                    </div>
+                    <h3>📈 Consultoria em Gestão Estratégica</h3>
+                    <p>Ajudo sua operação a ganhar eficiência real com base no que mais impacta o resultado: estoque bem controlado, produtos certos na hora certa e redução de perdas.</p>
+                    <p>Com ampla experiência em redes de atacarejo de grande porte, atuo na análise de ruptura de produtos, excesso de estoque, curva ABC e identificação de candidatos à falta, usando dados confiáveis e rotinas inteligentes.</p>
+                    <p>O objetivo é evitar encalhes, melhorar o giro e manter a loja abastecida com o que realmente vende — sem desperdícios e com foco prático.</p>
                 </div>
-
-                <div class="service-item">
-                    <div class="service-icon">📈</div>
-                    <h3 class="service-title">BI & Relatórios</h3>
-                    <p class="service-description">Dashboards inteligentes e relatórios que geram insights para decisões que impactam diretamente no lucro.</p>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <img src="icone-analytics.png" alt="BI & Relatórios">
+                    </div>
+                    <h3>🗃️ Inteligência de Negócios e Relatórios (BI)</h3>
+                    <p>Acesso fácil e seguro às informações mais importantes da sua empresa, de onde estiver e a qualquer momento.</p>
+                    <p>Crio dashboards personalizados, com indicadores claros, visões por loja, marca, setor ou até usuário, permitindo decisões rápidas, baseadas em dados reais.</p>
+                    <p>Tudo isso com controle de acesso por perfil, garantindo que cada gestor veja apenas o que precisa ver, com segurança e foco nos resultados.</p>
+                    
+                    <!-- BI Image Carousel -->
+                    <div class="bi-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="carousel-slide active">
+                                    <img src="dash1.png" alt="Dashboard BI 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="dash2.png" alt="Dashboard BI 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="dash3.png" alt="Dashboard BI 3">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="dash4.png" alt="Dashboard BI 4">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m15 18-6-6 6-6"/>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" onclick="changeSlide(1)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="currentSlide(1)"></span>
+                            <span class="indicator" onclick="currentSlide(2)"></span>
+                            <span class="indicator" onclick="currentSlide(3)"></span>
+                            <span class="indicator" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="service-item">
-                    <div class="service-icon">🔗</div>
-                    <h3 class="service-title">Integração de Sistemas</h3>
-                    <p class="service-description">Conexão entre CRM, WMS, e-commerce e ERP para reduzir retrabalho e otimizar operações.</p>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <img src="icone-integracao.png" alt="Integração de Sistemas">
+                    </div>
+                    <h3>⚙️ Integração de Sistemas</h3>
+                    <p>Conecto todas as pontas do seu negócio: ERP, CRM, WMS, e-commerce, BI e outras ferramentas.</p>
+                    <p>Com mais de 15 anos de experiência técnica, crio procedures, triggers e rotinas automatizadas para garantir que os sistemas conversem entre si, eliminando retrabalhos, erros manuais e informações desencontradas.</p>
+                    <p>O resultado? Uma operação mais leve, inteligente e produtiva.</p>
                 </div>
-
-                <div class="service-item">
-                    <div class="service-icon">📦</div>
-                    <h3 class="service-title">Controle de Estoque</h3>
-                    <p class="service-description">Gestão inteligente de estoque com curvas ABC, controle de ruptura e excesso para proteger o capital de giro.</p>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <img src="icone-estoque.png" alt="Controle de Estoque">
+                    </div>
+                    <h3>📊 Controle de Ruptura e Excesso de Estoque</h3>
+                    <p>Implanto soluções que monitoram estoques com inteligência, evitando tanto a falta quanto o excesso de produtos.</p>
+                    <p>Isso protege seu capital de giro, reduz perdas e garante que os itens certos estejam sempre disponíveis para o cliente — sem deixar produtos parados nas gôndolas ou no depósito.</p>
                 </div>
-
-                <div class="service-item">
-                    <div class="service-icon">👥</div>
-                    <h3 class="service-title">Gestão de Equipes</h3>
-                    <p class="service-description">Treinamento e capacitação de equipes com foco em resultados e alta performance operacional.</p>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <img src="icone-equipe.png" alt="Gestão de Equipes">
+                    </div>
+                    <h3>👥 Desenvolvimento e Gestão de Equipes</h3>
+                    <p>A tecnologia só gera resultado com pessoas capacitadas e engajadas.</p>
+                    <p>Ofereço treinamentos, acompanhamento de performance e estruturação de rotinas claras, formando equipes produtivas, alinhadas e comprometidas com os objetivos da empresa.</p>
+                    <p>Tudo isso com uma abordagem prática, conectada ao dia a dia do varejo.</p>
                 </div>
-
-                <div class="service-item">
-                    <div class="service-icon">🌐</div>
-                    <h3 class="service-title">Presença Digital</h3>
-                    <p class="service-description">Desenvolvimento de sites e landing pages profissionais para autônomos com estratégias para captar clientes.</p>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <img src="icone-web.png" alt="Presença Digital">
+                    </div>
+                    <h3>🌐 Presença Digital Profissional</h3>
+                    <p>Criação de sites e páginas de alta performance com foco em atrair clientes, gerar vendas e fortalecer sua marca no ambiente digital.</p>
+                    <p>Com visual moderno, textos estratégicos e estrutura técnica bem feita, ajudo você a se posicionar de forma profissional no mundo online — mesmo que ainda não tenha nenhuma presença digital.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experiencia" class="section">
+    <section id="experiencia" class="experience">
         <div class="container">
-            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="section-header">
+                <span class="section-badge">Experiência</span>
+                <h2 class="section-title">Minha Trajetória</h2>
+                <p class="section-description">
+                    Mais de 15 anos transformando negócios em todo o Brasil
+                </p>
+            </div>
+            
             <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3 class="timeline-title">Gestor de Tecnologia</h3>
-                            <h4 class="timeline-company">Grupo Nosso Atacarejo</h4>
-                        </div>
-                        <span class="timeline-period">2020 - Atual</span>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">2020 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Consultor Sênior em Gestão e Tecnologia</h3>
+                        <h4>MS Consultoria</h4>
+                        <p>Consultoria especializada em redes de varejo, supermercados e atacarejos, com foco em integração de sistemas, gestão estratégica e inteligência de dados (BI). Lidero projetos de alto impacto, conectando tecnologia e operação para gerar resultados concretos — como aumento de produtividade, redução de custos e tomada de decisão inteligente.</p>
+                        <p>Consolidei minha consultoria após uma trajetória de sucesso em projetos pelo Brasil, atuando diretamente com grupos que faturam mais de R$ 1 bilhão por ano.</p>
                     </div>
-                    <p class="timeline-description">Responsável por toda a área de tecnologia do grupo, conduzindo projetos de inovação, redução de custos e agilidade operacional em empresa com faturamento bilionário.</p>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3 class="timeline-title">Consultor Sênior em ERP</h3>
-                            <h4 class="timeline-company">Projetos Nacionais</h4>
-                        </div>
-                        <span class="timeline-period">2015 - 2020</span>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">2020 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Gestor de Tecnologia</h3>
+                        <h4>Grupo Nosso Atacarejo</h4>
+                        <p>Responsável por toda a frente de tecnologia de um dos grupos de atacarejo de maior crescimento do Nordeste. Fui convidado a integrar o projeto pela minha expertise técnica e visão estratégica, com o desafio de transformar a área de tecnologia em um diferencial competitivo.</p>
+                        <p>Conduzo iniciativas que visam agilidade, inovação, governança de dados e performance operacional, em um projeto com potencial de dobrar o faturamento da empresa. Minha atuação envolve desde infraestrutura, ERP e BI até automações e gestão de pessoas.</p>
                     </div>
-                    <p class="timeline-description">Implantação e migração de sistemas ERP em empresas de grande porte, atuando em mais de 21 estados brasileiros com foco em resultados mensuráveis.</p>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3 class="timeline-title">Analista de Sistemas</h3>
-                            <h4 class="timeline-company">Empresas do Varejo</h4>
-                        </div>
-                        <span class="timeline-period">2008 - 2015</span>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">2005 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Especialista em Implantação de ERP e Consultoria em Varejo</h3>
+                        <h4>Diversas Empresas e Projetos no Brasil</h4>
+                        <p>Mais de 15 anos de experiência em implantação, migração e customização de sistemas ERP para empresas de varejo, atacado e distribuição em todo o país. Atuei em todos os ciclos: análise de processos, arquitetura de soluções, integração entre sistemas, treinamento e suporte, com foco absoluto em performance e resultado.</p>
+                        <p>Atendi redes em todos os estados do Brasil, incluindo: PR, SP, SC, RN, CE, PE, PA, MA, AM, RO, MT, MS, DF, PI, AP, BA, MG, RR, TO, SE, RJ e PB.</p>
+                        <p>Essa bagagem me permite entregar consultorias cirúrgicas e direcionadas, adaptadas à realidade de cada operação, com olhar técnico e estratégico ao mesmo tempo.</p>
                     </div>
-                    <p class="timeline-description">Desenvolvimento de soluções tecnológicas para o varejo, com especialização em integração de sistemas e otimização de processos operacionais.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contato" class="section">
+    <section id="contato" class="contact">
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
+            <div class="section-header">
+                <span class="section-badge">Contato</span>
+                <h2 class="section-title">Vamos transformar seu negócio juntos</h2>
+                <p class="section-description">
+                    Entre em contato e descubra como posso ajudar a maximizar os resultados da sua empresa
+                </p>
+            </div>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
+                    <a href="mailto:maicouandrade@msconsultoria.net.br?subject=Interesse em conhecer seu trabalho&body=Olá,%0D%0ATenho interesse de conhecer mais sobre seu trabalho." class="contact-item">
+                        <div class="contact-icon">
+                            <img src="icone-email.png" alt="Email">
+                        </div>
                         <div class="contact-details">
-                            <h4>E-mail</h4>
+                            <h4>Email</h4>
                             <p>maicouandrade@msconsultoria.net.br</p>
                         </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
+                    </a>
+                    
+                    <a href="https://wa.me/5546999124141?text=Olá,%0ATenho%20interesse%20de%20conhecer%20mais%20sobre%20seu%20trabalho." target="_blank" class="contact-item">
+                        <div class="contact-icon whatsapp-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
+                            </svg>
+                        </div>
                         <div class="contact-details">
                             <h4>WhatsApp</h4>
                             <p>+55 (46) 9 9112-4141</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="highlight-box">
-                        <h4>🚀 Pronto para Transformar seu Negócio?</h4>
-                        <p>Vamos conversar sobre como posso ajudar sua empresa a alcançar resultados excepcionais com tecnologia e gestão estratégica integradas.</p>
-                    </div>
                 </div>
-
+                
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" required>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
                         </div>
-
                         <div class="form-group">
-                            <label for="empresa">Empresa</label>
-                            <input type="text" id="empresa" name="empresa">
+                            <input type="email" id="email" name="email" placeholder="Seu email" required>
                         </div>
-
                         <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
                         </div>
-
                         <div class="form-group">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" name="telefone">
+                            <textarea id="mensagem" name="mensagem" placeholder="Conte-me sobre seu projeto ou desafio" rows="5" required></textarea>
                         </div>
-
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-button">Enviar Mensagem</button>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Enviar Mensagem</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m22 2-7 20-4-9-9-4z"/>
+                                <path d="M22 2 11 13"/>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="avarodape.png" alt="MS Consultoria" class="logo-icon">
+                    <span class="logo-text">MS Consultoria</span>
+                </div>
+                <p class="footer-text">
+                    Conectamos sistemas, organizamos dados e entregamos inteligência em BI.
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MS Consultoria. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
